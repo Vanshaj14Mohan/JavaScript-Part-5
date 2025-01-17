@@ -1,0 +1,1 @@
+## In this part I'll be covering all the necessary and important topics related to Functions in JavaScript, their types & how to use them. In normal to advanced coding.
