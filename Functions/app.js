@@ -47,3 +47,18 @@ function checkAdult(){ //check if entered user is adult or not
 }
 
 checkAdult();
+
+//Now Functions with arguments
+function printInfo(name, age){
+    console.log(`name is ${name} and age is ${age}`);
+}
+
+printInfo("John", 23);
+
+//create a function that returns the sum of two numbers.
+function sum(a,b){
+    console.log("Sum is", a+b);
+}
+
+sum(2,6);
+sum(4,8);
