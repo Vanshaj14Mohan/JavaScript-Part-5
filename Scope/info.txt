@@ -18,5 +18,44 @@ function calSum(a, b){
 calSum(2,5);             
 console.log(sum);
 
-2- Block Scope:
-Variables declared inside a {} block cannot be accessed from outside the block.
+2 - Global Scope -> A variable that can be accessed in any function or method
+eg Let sum = 10;
+
+function calSum(a,b){
+    console.log(sum); will print 10
+}
+
+calSum(2,5), will print 8
+
+3 - Block Scope:
+Variables declared inside a {} block cannot be accessed from outside the block. (only applicable on const and let keyword)
+eg:
+{
+    let a = 20;
+    const b = 10;
+}
+
+console.log(a);
+console.log(b);
+will give error as 
+but if we write
+{
+    var a = 10;
+}
+
+console.log(a); it will give result as 10;
+
+4 - Lexical Scope: (We basically use nested function concept here)
+A variable defined outside a function can be accessed inside another function defined after the variable declaration.
+But the opposite is not True.
+eg 
+function outerFunc(){
+    let x = 5;
+    let y = 6;
+    function innerFunc(){ //function scope
+        console.log(x);
+    }
+    innerFunc();
+}
+
+outerFunc();
