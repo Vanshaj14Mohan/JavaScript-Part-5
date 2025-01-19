@@ -1,0 +1,19 @@
+In this we will learn about Scope:
+Scope determines the accessibility of variables, objects, and functions from different parts of the code:
+4 Scopes in JavaScript
+: Function Scope
+: Block Scope
+: Global Scope
+: Lexical Scope
+
+1 - Function Scope:
+Variables defined inside a function are not accessible (visible) from outside the function.
+eg 
+It will give error as sum can only be accessed within the function;
+function calSum(a, b){
+    let sum = a+b;
+    //console.log(sum);
+}
+
+calSum(2,5);             
+console.log(sum);
