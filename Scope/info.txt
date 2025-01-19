@@ -7,7 +7,7 @@ Scope determines the accessibility of variables, objects, and functions from dif
 : Lexical Scope
 
 1 - Function Scope:
-Variables defined inside a function are not accessible (visible) from outside the function.
+Variables defined inside a function are not accessible (visible) from outside the function. (More specific)
 eg 
 It will give error as sum can only be accessed within the function;
 function calSum(a, b){
