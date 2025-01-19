@@ -17,3 +17,6 @@ function calSum(a, b){
 
 calSum(2,5);             
 console.log(sum);
+
+2- Block Scope:
+Variables declared inside a {} block cannot be accessed from outside the block.
