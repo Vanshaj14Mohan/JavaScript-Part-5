@@ -72,8 +72,19 @@ function checkSum(a,b){
 
 // console.log(checkSum(checkSum(2,4),4)); to print sum of three numbers using functions-> a trick 
 
-
 // let s = checkSum(2,5); will print the value only when we store it in a variable & then console.log()
 // or console.log(checkSum(2,5));
 // console.log(s);
 
+//Using Function Expressions
+let add = function(a, b){
+    return a + b;
+}
+
+add(10,20);
+
+let hello_2 = function(){
+    console.log("Hello");
+}
+
+hello_2();
