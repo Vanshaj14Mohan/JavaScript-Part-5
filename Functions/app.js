@@ -88,3 +88,16 @@ let hello_2 = function(){
 }
 
 hello_2();
+
+//Higher order functions -> Takes one or multiple functions as arguments.
+function multipleGreet(func, count){
+    for(let i = 1; i<=count; i++){
+        func();
+    }
+}
+
+let greet = function(){
+    console.log("Greet");
+}
+
+multipleGreet(greet, 4);
