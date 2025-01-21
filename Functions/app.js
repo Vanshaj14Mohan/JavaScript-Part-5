@@ -130,3 +130,19 @@ function oddEvenTest(request){
 }
 
 let request = "even";
+
+//Methods -> Actions that can be performed on an object.
+const calculator = {
+    add: function(a, b){
+        return a+b;
+    },
+    sub: function(a, b){
+        return a- b;
+    },
+    div: function(a, b){
+        return a/b;
+    },
+    mult: function(a, b){
+        return a*b;
+    }
+};
