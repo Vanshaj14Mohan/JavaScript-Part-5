@@ -101,3 +101,32 @@ let greet = function(){
 }
 
 multipleGreet(greet, 4);
+
+//Even - Odd Function
+// let odd = function(n){
+//     console.log(!(n%2 == 0))
+// }
+
+// let even = function(n){
+//     console.log(n%2 == 0);
+// }
+
+function oddEvenTest(request){
+    if(request == "Odd"){
+        return function(n){
+            console.log(!(n%2 == 0))
+        }
+        return odd;
+    }
+    else if(request == "Even"){
+        return function(n){
+            console.log(n%2 == 0);
+        }
+        return even;
+    }
+    else{
+        console.log("Wrong request..");
+    }
+}
+
+let request = "even";
