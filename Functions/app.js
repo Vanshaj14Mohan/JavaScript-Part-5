@@ -90,7 +90,7 @@ let hello_2 = function(){
 hello_2();
 
 //Higher order functions -> Takes one or multiple functions as arguments.
-function multipleGreet(func, count){
+function multipleGreet(func, count){ //higher order function.
     for(let i = 1; i<=count; i++){
         func();
     }
