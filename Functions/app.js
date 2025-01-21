@@ -133,16 +133,33 @@ let request = "even";
 
 //Methods -> Actions that can be performed on an object.
 const calculator = {
-    add: function(a, b){
+    add: function(a, b){ //calculator.add(2,5)
         return a+b;
     },
-    sub: function(a, b){
+    sub: function(a, b){ //calculator.sub(7,2)
         return a- b;
     },
-    div: function(a, b){
+    div: function(a, b){ //calculator.div(6,2)
         return a/b;
     },
-    mult: function(a, b){
+    mult: function(a, b){ //calculator.mult(2,5)
         return a*b;
     }
 };
+
+//Shorthand
+const calcu = {
+    add(a, b){  //calc.add(2,5)
+        return a+b;
+    },
+    sub(a, b){ //calc.sub(5,4)
+        return a- b;
+    },
+    div(a, b){ //calc.div(5,2)
+        return a/b;
+    },
+    mult(a, b){ //calc.mult(5,2)
+        return a*b;
+    }
+};
+
